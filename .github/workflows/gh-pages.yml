@@ -26,7 +26,7 @@ jobs:
 
       - run: npm ci
       - run: npm install -g
-      - run: npm gitbook build
+      - run: gitbook build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
