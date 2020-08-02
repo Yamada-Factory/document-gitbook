@@ -24,10 +24,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm ci
-      - run: npm install -g
-      - run: npm install gitbook -g
-      - run: gitbook build
+      - name: install
+        run: npm ci
+        run: npm install -g
+
+      - name: build
+        run: gitbook build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
