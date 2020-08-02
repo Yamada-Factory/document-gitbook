@@ -25,7 +25,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: install
-        run: npm ci && npm install -g
+        run: npm ci && npm install -g gitbook-cli
 
       - name: build
         run: gitbook build
