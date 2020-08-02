@@ -25,10 +25,10 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: install
-        run: npm ci && npm install -g gitbook-cli
+        run: npm ci && npm install
 
       - name: build
-        run: gitbook build
+        run: ./node_modules/gitbook-cli/bin/gitbook.js build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
