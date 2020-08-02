@@ -1,0 +1,9 @@
+{
+    "language": "ja",
+    "plugins": ["-sharing","hide-published-with", "theme-api"],
+    "pluginsConfig": {
+        "theme-api": {
+            "theme": "dark"
+        }
+    }
+}
