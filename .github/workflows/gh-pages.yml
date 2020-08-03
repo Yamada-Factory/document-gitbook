@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '8.x'
-
+z
       - name: Cache dependencies
         uses: actions/cache@v1
         with:
@@ -28,7 +28,7 @@ jobs:
         run: npm ci && npm install
 
       - name: build
-        run: ./node_modules/gitbook-cli/bin/gitbook.js install && npm run build
+        run: npm run install && npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
