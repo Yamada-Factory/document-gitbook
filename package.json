@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-hide-published-with": "^1.0.3",
+    "gitbook-plugin-theme-api": "^1.1.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "gitbook install",
+    "build": "gitbook build"
   },
   "repository": {
     "type": "git",
