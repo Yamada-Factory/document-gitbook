@@ -1,6 +1,16 @@
 {
     "language": "ja",
-    "plugins": ["-sharing","hide-published-with", "theme-api"],
+    "plugins": [
+        "-sharing",
+        "hide-published-with",
+        "theme-api",
+        "collapsible-chapters",
+        "hide-published-with",
+        "copy-code-button",
+        "prism", "-highlight",
+        "hints",
+        "advanced-emoji"
+    ],
     "pluginsConfig": {
         "theme-api": {
             "theme": "dark"
