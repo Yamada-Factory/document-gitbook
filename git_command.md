@@ -1,6 +1,6 @@
 # Gitコマンド
 
-{% hint style='info' %}
+{% hint style='tip' %}
 コマンド操作に不慣れな場合は SourceTree などGUIソフトを使用してください
 {% endhint %}
 
