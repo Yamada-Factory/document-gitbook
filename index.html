@@ -17,7 +17,19 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
                 
             
                 
@@ -61,6 +73,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="git_command.html" />
+    
     
 
     </head>
@@ -95,6 +109,32 @@
             
                     
                     山田製作所開発部
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="git_command.html">
+            
+                <a href="git_command.html">
+            
+                    
+                    Gitコマンドについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="git_rule.html">
+            
+                <a href="git_rule.html">
+            
+                    
+                    Git運用ルール
             
                 </a>
             
@@ -148,6 +188,8 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="introduction">Introduction</h1>
+<p>&#x5C71;&#x7530;&#x88FD;&#x4F5C;&#x6240;&#x3068;&#x306F;&#x67B6;&#x7A7A;&#x306E;&#x7D44;&#x7E54;&#x3067;&#x3059;&#xFF0E;&#x73FE;&#x5B9F;&#x306B;&#x3042;&#x308B;&#x7D44;&#x7E54;&#x3068;&#x306F;&#x4E00;&#x5207;&#x95A2;&#x4FC2;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#xFF0E;
+&#x5C71;&#x7530;&#x88FD;&#x4F5C;&#x6240;&#x958B;&#x767A;&#x90E8;&#x3067;&#x306F;&#xFF0C;&#x4E16;&#x9593;&#x3068;&#x306F;&#x9055;&#x3046;&#x904B;&#x7528;&#x3092;&#x3057;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#xFF0E;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
 
                                 
                                 </section>
@@ -181,7 +223,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"山田製作所開発部","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":["-sharing","hide-published-with","theme-api"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-api":{"languages":[],"split":true,"theme":"dark"},"hide-published-with":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"README.md","mtime":"2020-08-03T23:57:22.799Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-03T23:58:32.058Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"山田製作所開発部","level":"1.1","depth":1,"next":{"title":"Gitコマンドについて","level":"1.2","depth":1,"path":"git_command.md","ref":"git_command.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","hide-published-with","theme-api","collapsible-chapters","hide-published-with","copy-code-button","prism","-highlight","hints","advanced-emoji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"search":{},"collapsible-chapters":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"languages":[],"split":true,"theme":"dark"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"README.md","mtime":"2020-08-08T17:06:07.672Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-08T17:07:42.830Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -192,6 +234,14 @@
     
         
         <script src="gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
         
     
         

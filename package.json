@@ -5,7 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gitbook-plugin-collapsible-chapters": "^0.1.8",
+    "gitbook-plugin-copy-code-button": "0.0.2",
     "gitbook-plugin-hide-published-with": "^1.0.3",
+    "gitbook-plugin-hints": "^1.0.2",
+    "gitbook-plugin-prism": "^2.4.0",
     "gitbook-plugin-theme-api": "^1.1.2"
   },
   "devDependencies": {},
