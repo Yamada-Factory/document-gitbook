@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Git運用ルール · GitBook</title>
+        <title>開発について · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="git_rule.html" />
+    <link rel="next" href="develop.html" />
     
     
-    <link rel="prev" href="develop.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -118,7 +118,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="develop.html">
+        <li class="chapter active" data-level="1.2" data-path="develop.html">
             
                 <a href="develop.html">
             
@@ -241,7 +241,7 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="git_rule.html">
+        <li class="chapter " data-level="2.1" data-path="git_rule.html">
             
                 <a href="git_rule.html">
             
@@ -574,7 +574,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Git運用ルール</a>
+        <a href="." >開発について</a>
     </h1>
 </div>
 
@@ -589,84 +589,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="git&#x904B;&#x7528;&#x30EB;&#x30FC;&#x30EB;">Git&#x904B;&#x7528;&#x30EB;&#x30FC;&#x30EB;</h1>
-<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>&#x305D;&#x3082;&#x305D;&#x3082;&#x5C71;&#x7530;&#x88FD;&#x4F5C;&#x6240;&#x3068;&#x306F;&#x67B6;&#x7A7A;&#x306E;&#x7D44;&#x7E54;&#x3067;&#x3059;&#xFF0E;&#x73FE;&#x5B9F;&#x306B;&#x3042;&#x308B;&#x7D44;&#x7E54;&#x3068;&#x306F;&#x4E00;&#x5207;&#x95A2;&#x4FC2;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#xFF0E;<br>&#x5C71;&#x7530;&#x88FD;&#x4F5C;&#x6240;&#x958B;&#x767A;&#x90E8;&#x3067;&#x306F;&#xFF0C;&#x4E16;&#x9593;&#x3068;&#x306F;&#x9055;&#x3046;&#x904B;&#x7528;&#x3092;&#x3057;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#xFF0E;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
-</div></div></p>
-<h2 id="&#x30D6;&#x30E9;&#x30F3;&#x30C1;">&#x30D6;&#x30E9;&#x30F3;&#x30C1;</h2>
-<h3 id="&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x547D;&#x540D;&#x898F;&#x5247;">&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x547D;&#x540D;&#x898F;&#x5247;</h3>
-<table>
-<thead>
-<tr>
-<th>&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x540D;</th>
-<th>&#x8AAC;&#x660E;</th>
-<th>&#x5099;&#x8003;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>master</code></td>
-<td>&#x30DE;&#x30B9;&#x30BF;&#x30FC;&#x30D6;&#x30E9;&#x30F3;&#x30C1;</td>
-<td>&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x6E08;&#x306E;&#x6700;&#x65B0;&#x7248;</td>
-</tr>
-<tr>
-<td><code>release/v<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;</span><span class="token punctuation">&gt;</span></span></code></td>
-<td>&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x30D6;&#x30E9;&#x30F3;&#x30C1;</td>
-<td>&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x6642;&#x306B;&#x30DE;&#x30B9;&#x30BF;&#x30FC;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x30DE;&#x30FC;&#x30B8;&#x3059;&#x308B;</td>
-</tr>
-<tr>
-<td><code>feature/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>#issue_num</span><span class="token punctuation">&gt;</span></span></code></td>
-<td>&#x30D5;&#x30E5;&#x30FC;&#x30C1;&#x30E3;&#x30FC;&#x30D6;&#x30E9;&#x30F3;&#x30C1;</td>
-<td>&#x6A5F;&#x80FD;&#x8FFD;&#x52A0;&#x3084;&#x6539;&#x4FEE;&#x306A;&#x3069;&#x306F;&#x3053;&#x308C;<br>release&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x30DE;&#x30FC;&#x30B8;&#x3059;&#x308B;</td>
-</tr>
-<tr>
-<td><code>fix/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>#issue_num</span><span class="token punctuation">&gt;</span></span></code></td>
-<td>&#x30D0;&#x30B0;&#x4FEE;&#x6B63;&#x30D6;&#x30E9;&#x30F3;&#x30C1;</td>
-<td>&#x4E0A;&#x304C;&#x3063;&#x305F;&#x30D0;&#x30B0;&#x306E;&#x4FEE;&#x6B63;&#x3092;&#x884C;&#x3046;&#x30D6;&#x30E9;&#x30F3;&#x30C1;<br>release&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x30DE;&#x30FC;&#x30B8;&#x3059;&#x308B;</td>
-</tr>
-</tbody>
-</table>
-<p>&#x305D;&#x306E;&#x4ED6;&#x5FC5;&#x8981;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x9069;&#x5B9C;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;&#x6848;&#x4EF6;&#x5225;&#x53C2;&#x7167;</p>
-<h3 id="&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x4F5C;&#x6210;&#x30EB;&#x30FC;&#x30EB;">&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x4F5C;&#x6210;&#x30EB;&#x30FC;&#x30EB;</h3>
-<ul>
-<li>1&#x6A5F;&#x80FD;(1 issue)&#x3001;1&#x30D6;&#x30E9;&#x30F3;&#x30C1;</li>
-<li>&#x57FA;&#x672C;&#x7684;&#x306B;&#x30DE;&#x30FC;&#x30B8;&#x4E88;&#x5B9A;&#x5148;&#x304B;&#x3089;&#x5207;&#x308B;<ul>
-<li>&#x901A;&#x5E38;&#x306F;&#x6B21;&#x671F;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x306E;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x304B;&#x3089;&#x4F5C;&#x6210;&#x3059;&#x308B;</li>
-<li>issue#n &#x306E;&#x5B50;issue#m &#x306E;&#x5834;&#x5408;&#x306F;&#xFF0C;issue#n &#x304B;&#x3089;&#x4F5C;&#x6210;&#x3059;&#x308B;</li>
-</ul>
-</li>
-<li>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;Git&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306B;&#x3064;&#x3044;&#x3066;&#x53C2;&#x7167;</li>
-</ul>
-<h3 id="&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306E;&#x524A;&#x9664;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306E;&#x524A;&#x9664;&#x306B;&#x3064;&#x3044;&#x3066;</h3>
-<p>&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x306E;&#x30BF;&#x30A4;&#x30DF;&#x30F3;&#x30B0;&#x3067;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306E;&#x524A;&#x9664;&#x3092;&#x884C;&#x3046;&#xFF0E;&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x304C;&#x53D7;&#x7406;&#x3055;&#x308C;&#x305F;&#x304B;&#x3089;&#x3068;&#x8A00;&#x3063;&#x3066;&#x52DD;&#x624B;&#x306B;&#x524A;&#x9664;&#x3057;&#x306A;&#x3044;&#x3053;&#x3068;</p>
-<h2 id="&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306B;&#x3064;&#x3044;&#x3066;</h2>
-<h3 id="&#x5F62;&#x5F0F;">&#x5F62;&#x5F0F;</h3>
-<pre class="language-"><code>[add|remove|update|fix]: &#x8981;&#x7D04; #issue&#x756A;&#x53F7;
-</code></pre><ul>
-<li>add : &#x65B0;&#x898F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30FB;&#x6A5F;&#x80FD;&#x8FFD;&#x52A0;</li>
-<li>remove : &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x524A;&#x9664;</li>
-<li>update : &#x6A5F;&#x80FD;&#x4FEE;&#x6B63;&#xFF08;&#x30D0;&#x30B0;&#x306F;fix&#xFF09;</li>
-<li>fix : &#x30D0;&#x30B0;&#x4FEE;&#x6B63;</li>
-</ul>
-<h2 id="&#x30DE;&#x30FC;&#x30B8;&#x5148;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x53CD;&#x6620;&#x3059;&#x308B;">&#x30DE;&#x30FC;&#x30B8;&#x5148;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x53CD;&#x6620;&#x3059;&#x308B;</h2>
-<p>&#x30DE;&#x30FC;&#x30B8;&#x5148;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x304B;&#x3089;&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x5F8C;&#x306B;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3068;&#x304D;&#x3001;&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x304B;&#x3089;&#x30DE;&#x30FC;&#x30B8;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x306A;&#x3044;&#x3053;&#x3068;&#x3042;&#x308B;(&#x30B3;&#x30F3;&#x30D5;&#x30EA;&#x30AF;&#x30C8;)
-&#x3053;&#x306E;&#x3088;&#x3046;&#x306A;&#x3068;&#x304D;&#x306B;&#x3001;&#x30DE;&#x30FC;&#x30B8;&#x5148;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306E;&#x5909;&#x66F4;&#x3092;&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x53CD;&#x6620;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x3002;</p>
-<pre class="language-"><code>$ git switch master
-$ git pull
-$ git switch <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;</span><span class="token punctuation">&gt;</span></span>
-$ git merge <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x30DE;&#x30FC;&#x30B8;&#x5148;&#x30D6;&#x30E9;&#x30F3;&#x30C1;</span><span class="token punctuation">&gt;</span></span>
-// &#x3053;&#x3053;&#x3067;&#x30B3;&#x30F3;&#x30D5;&#x30EA;&#x30AF;&#x30C8;&#x304C;&#x767A;&#x751F;&#x3059;&#x308B;&#x306F;&#x305A;
-// &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x7DE8;&#x96C6;&#x3057;&#x3066;&#x30B3;&#x30F3;&#x30D5;&#x30EA;&#x30AF;&#x30C8;&#x3092;&#x89E3;&#x6D88;&#x3059;&#x308B;
-$ git add <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x30B3;&#x30F3;&#x30D5;&#x30EA;&#x30AF;&#x30C8;&#x3092;&#x89E3;&#x6D88;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;</span><span class="token punctuation">&gt;</span></span>
-$ git commit 
-$ git push origin/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;</span><span class="token punctuation">&gt;</span></span>
-</code></pre><h2 id="&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x306B;&#x3064;&#x3044;&#x3066;</h2>
-<p>&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x306F;&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3067;&#x306E;&#x4F5C;&#x696D;&#x304C;&#x4E00;&#x901A;&#x308A;&#x7D42;&#x4E86;&#x3057;&#x305F;&#x6642;&#x70B9;&#x3067;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;<br>&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x306E;&#x5411;&#x304D;&#x5148;&#x306F;&#x89AA;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#xFF08;&#x901A;&#x5E38;&#x306F;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#xFF09;&#x3067;&#x3042;&#x308B;&#xFF0E;  </p>
-<h3 id="&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x4F5C;&#x6210;&#x6642;">&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x4F5C;&#x6210;&#x6642;</h3>
-<p>&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x306E;&#x4F5C;&#x6210;&#x6642;&#x306B;&#xFF0C;issue&#x756A;&#x53F7;&#x3068;&#x4FEE;&#x6B63;&#x5185;&#x5BB9;&#x306B;&#x3064;&#x3044;&#x3066;&#x8A18;&#x8FF0;&#x3057;&#x3066;&#x304A;&#x304F;&#x3053;&#x3068;&#x304C;&#x597D;&#x307E;&#x3057;&#x3044;&#xFF0E;  </p>
-<h3 id="&#x30EC;&#x30D3;&#x30E5;&#x30EF;&#x30FC;">&#x30EC;&#x30D3;&#x30E5;&#x30EF;&#x30FC;</h3>
-<p>&#x958B;&#x767A;&#x306B;&#x95A2;&#x308F;&#x3063;&#x3066;&#x3044;&#x308B;&#x4EBA;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x597D;&#x307E;&#x3057;&#x3044;&#xFF0E;</p>
-<h3 id="&#x30DE;&#x30FC;&#x30B8;">&#x30DE;&#x30FC;&#x30B8;</h3>
-<p>&#x30DE;&#x30FC;&#x30B8;&#x306F;TOP&#x304C;&#x884C;&#x3046;&#x3053;&#x3068;&#x304C;&#x591A;&#x3044;&#x304C;&#xFF0C;&#x5225;&#x306B;&#x3053;&#x306E;&#x9650;&#x308A;&#x3067;&#x306F;&#x306A;&#x3044;&#xFF0E;<br>&#x5B9F;&#x88C5;&#x8005;&#x304C;&#x30DE;&#x30FC;&#x30B8;&#x3059;&#x308B;&#x969B;&#x306B;&#x306F;&#x30EC;&#x30D3;&#x30E5;&#x30EF;&#x30FC;&#x304C;&#xFF0C;OK&#x3059;&#x308B;&#x3053;&#x3068;  </p>
+                                <h1 id="&#x958B;&#x767A;&#x306B;&#x95A2;&#x3057;&#x3066;">&#x958B;&#x767A;&#x306B;&#x95A2;&#x3057;&#x3066;</h1>
+<h2 id="&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x99C6;&#x52D5;&#x65B9;&#x5F0F;">&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x99C6;&#x52D5;&#x65B9;&#x5F0F;</h2>
+<p>&#x8A73;&#x3057;&#x304F;&#x306F;&#x30B0;&#x30B0;&#x3063;&#x3066;<br>&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x306F;GitHub&#x306E;issue&#x306B;&#x3088;&#x3063;&#x3066;&#x7BA1;&#x7406;&#x3055;&#x308C;&#x308B;<br>&#x62C5;&#x5F53;&#x8005;&#x306F;&#x81EA;&#x5206;&#x306B;&#x3067;&#x304D;&#x305D;&#x3046;&#x306A;issue&#x304C;&#x3042;&#x308C;&#x3070;&#x958B;&#x767A;&#x30C8;&#x30C3;&#x30D7;&#x306B;&#x7533;&#x3057;&#x51FA;&#x308B;&#xFF08;&#x4F8B;&#x5916;&#x7684;&#x306B;&#xFF0C;&#x81EA;&#x5206;&#x304C;&#x62C5;&#x5F53;&#x3057;&#x3066;&#x3044;&#x308B;&#x7269;&#x306E;&#x95A2;&#x9023;&#x3067;&#x3042;&#x308C;&#x3070;&#x53D6;&#x308A;&#x639B;&#x304B;&#x3063;&#x3066;&#x554F;&#x984C;&#x306A;&#x3044;&#xFF09;<br>&#x62C5;&#x5F53;&#x8005;&#x306F; <code>Assignees</code> &#x306B;&#x3088;&#x3063;&#x3066;&#x7BA1;&#x7406;&#x3055;&#x308C;&#x308B;</p>
+<h2 id="&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306B;&#x3064;&#x3044;&#x3066;</h2>
+<p>&#x539F;&#x5247;&#xFF0C;<a href="https://github.com/Yamada-Factory/" target="_blank">Yamada-Factory</a>&#x914D;&#x4E0B;&#x306B;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x308B;&#xFF0E;&#x5C71;&#x7530;&#x88FD;&#x4F5C;&#x6240;&#x8077;&#x54E1;&#x4EE5;&#x5916;&#x306F;&#x5404;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3054;&#x3068;&#x306B;invite&#x3055;&#x308C;&#x308B;  </p>
+<h3 id="github-pages&#x306B;&#x3064;&#x3044;&#x3066;">GitHub pages&#x306B;&#x3064;&#x3044;&#x3066;</h3>
+<p>&#x5C71;&#x7530;&#x88FD;&#x4F5C;&#x6240;&#x306E;&#x30C9;&#x30E1;&#x30A4;&#x30F3;&#x306F; yamadas.ml &#x3067;&#x3042;&#x308B;<br>&#x30B5;&#x30D6;&#x30C9;&#x30E1;&#x30A4;&#x30F3;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x3044;&#x969B;&#x306F;&#xFF0C;&#x7533;&#x8ACB;&#x3059;&#x308B;&#x3053;&#x3068;</p>
+<h2 id="&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x3044;&#x3066;</h2>
+<h3 id="issue&#x547D;&#x540D;&#x898F;&#x5247;">issue&#x547D;&#x540D;&#x898F;&#x5247;</h3>
+<pre class="language-"><code>[feature|bug] &#x8981;&#x7D04;
+</code></pre><p>&#x4F46;&#x3057;&#xFF0C;&#x5FC5;&#x8981;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x9069;&#x5B9C;&#x8FFD;&#x52A0;&#x3059;&#x308B;<br>&#x307E;&#x305F;&#xFF0C;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x306B;&#x89AA;issue&#x304C;&#x3042;&#x308C;&#x3070;issue&#x756A;&#x53F7;&#x3092;&#x6DFB;&#x3048;&#x308B;</p>
+<h3 id="milestones">milestones</h3>
+<p>&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x95A2;&#x4FC2;&#x306A;&#x3089; <code>release/v<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;</span><span class="token punctuation">&gt;</span></span></code>&#x3067;&#xFF0C;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x65E5;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;<br>issue&#x306F;&#x57FA;&#x672C;&#x7684;&#x306B;milestones&#x306B;&#x7D10;&#x3065;&#x3051;&#x3092;&#x884C;&#x3046;&#x3053;&#x3068;&#x3067;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x306B;&#x95A2;&#x9023;&#x3059;&#x308B;issue&#x3092;&#x533A;&#x5225;&#x3059;&#x308B;</p>
+<h3 id="&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x306E;&#x62C5;&#x5F53;&#x306B;&#x306A;&#x3063;&#x305F;&#x3089;">&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x306E;&#x62C5;&#x5F53;&#x306B;&#x306A;&#x3063;&#x305F;&#x3089;</h3>
+<p><strong>&#x89AA;&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#xFF08;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#xFF09;&#x304B;&#x3089;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x5207;&#x3063;&#x3066;</strong> &#x53D6;&#x308A;&#x639B;&#x304B;&#x308B;<br>&#x65B0;&#x898F;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306F;&#x4ECA;&#x5F8C;&#x300C;&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x300D;&#x3068;&#x547C;&#x79F0;&#x3055;&#x308C;&#x308B;&#xFF0E;&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x306B;&#x95A2;&#x3057;&#x3066;&#x4F5C;&#x696D;&#x3057;&#x305F;&#x5909;&#x66F4;&#x306F; dev&#x74B0;&#x5883;&#x3067;&#x306E;&#x78BA;&#x8A8D;&#x5F8C;&#xFF0C;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x3057;&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x3092;&#x5207;&#x3063;&#x305F;&#x5143;&#x306E;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#xFF0E;<br>&#x307E;&#x305F;&#xFF0C;&#x30EC;&#x30D3;&#x30E5;&#x30EF;&#x30FC;&#x306B;&#x306F;&#x958B;&#x767A;&#x30C8;&#x30C3;&#x30D7;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#xFF0E;<br>&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x4F5C;&#x6210;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x8A73;&#x3057;&#x304F;&#x306F; <a href="git_command.html#&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x4F5C;&#x6210;">Git&#x904B;&#x7528;&#x30EB;&#x30FC;&#x30EB;#&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x4F5C;&#x6210;</a> &#x3092;&#x78BA;&#x8A8D;&#x3055;&#x308C;&#x305F;&#x3057;</p>
+<h2 id="&#x958B;&#x767A;&#x306E;&#x6D41;&#x308C;">&#x958B;&#x767A;&#x306E;&#x6D41;&#x308C;</h2>
+<ol>
+<li>&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x306E;&#x5B9F;&#x88C5;&#x8005;&#x306B;&#x306A;&#x308B; <a href="#&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x306E;&#x62C5;&#x5F53;&#x306B;&#x306A;&#x3063;&#x305F;&#x3089;">&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x62C5;&#x5F53;&#x306B;&#x306A;&#x3063;&#x305F;&#x3089;</a></li>
+<li><a href="git_command.html#&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x4F5C;&#x6210;">&#x4F5C;&#x696D;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x4F5C;&#x6210;</a>&#x3057;&#x3066;&#xFF0C;&#x30C1;&#x30B1;&#x30C3;&#x30C8;&#x5185;&#x5BB9;&#x306B;&#x6CBF;&#x3063;&#x305F;&#x4F5C;&#x696D;&#x3092;&#x884C;&#x3046;</li>
+<li>&#x5909;&#x66F4;&#x3092;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x3057;&#xFF0C;push</li>
+<li>&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x3057;&#xFF0C;&#x89AA;&#x30D6;&#x30E9;&#x30F3;&#x30C1;(&#x901A;&#x5E38;&#x306F;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x30D6;&#x30E9;&#x30F3;&#x30C1;)&#x306B;<a href="git_rule.html#&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x306B;&#x3064;&#x3044;&#x3066;">&#x30D7;&#x30EB;&#x30EA;&#x30AF;</a>&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</li>
+<li>&#x30DE;&#x30FC;&#x30B8;&#x3055;&#x308C;&#x305F;&#x3089;&#x7D42;&#x4E86;</li>
+</ol>
 <p><br>
 <br></p>
 
@@ -702,7 +647,7 @@ $ git push origin/<span class="token tag"><span class="token tag"><span class="t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git運用ルール","level":"2.1","depth":1,"next":{"title":"ブランチ","level":"2.1.1","depth":2,"anchor":"#ブランチ","path":"git_rule.md","ref":"git_rule.md#ブランチ","articles":[{"title":"ブランチ命名規則","level":"2.1.1.1","depth":3,"anchor":"#ブランチ命名規則","path":"git_rule.md","ref":"git_rule.md#ブランチ命名規則","articles":[]},{"title":"ブランチ作成ルール","level":"2.1.1.2","depth":3,"anchor":"#ブランチ作成ルール","path":"git_rule.md","ref":"git_rule.md#ブランチ作成ルール","articles":[]},{"title":"ブランチの削除について","level":"2.1.1.3","depth":3,"anchor":"#ブランチの削除について","path":"git_rule.md","ref":"git_rule.md#ブランチの削除について","articles":[]}]},"previous":{"title":"開発の流れ","level":"1.2.4","depth":2,"anchor":"#開発の流れ","path":"develop.md","ref":"develop.md#開発の流れ","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","hide-published-with","theme-api","collapsible-chapters","hide-published-with","copy-code-button","prism","-highlight","hints","advanced-emoji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"search":{},"collapsible-chapters":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"languages":[],"split":true,"theme":"dark"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"git_rule.md","mtime":"2020-08-08T18:57:15.400Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-08T18:58:48.695Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"開発について","level":"1.2","depth":1,"next":{"title":"チケット駆動方式","level":"1.2.1","depth":2,"anchor":"#チケット駆動方式","path":"develop.md","ref":"develop.md#チケット駆動方式","articles":[]},"previous":{"title":"山田製作所開発部","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","hide-published-with","theme-api","collapsible-chapters","hide-published-with","copy-code-button","prism","-highlight","hints","advanced-emoji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"search":{},"collapsible-chapters":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-api":{"languages":[],"split":true,"theme":"dark"},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"develop.md","mtime":"2020-08-08T18:57:15.400Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-08T18:58:48.695Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
