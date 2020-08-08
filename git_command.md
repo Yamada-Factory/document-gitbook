@@ -30,17 +30,17 @@ $ git merge origin/<merge元ブランチ>
 
 
 ## ブランチ作成
-マージ予定先から切ること！（Gitうんよう
+マージ予定先から切ること！（Git運用参照）
 例： `release/v1.0.0` から **feature/add_CNAME#13** というブランチを切るとき
 ```
 $ git switch -c feature/add_CNAME#13 release/v1.0.0
+
 ```
-
-
 ### ブランチ作成時のpush
 ```
 $ git push -u origin <作成したブランチ>
 ```
+
 
 <br>
 <br>
